@@ -1,14 +1,37 @@
-div {
-  color: aqua;
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 50px;
 }
 
-h1 {
-  color: aqua;
+.container {
+  display: flex;
+  align-items: center;
+  border: 20px solid #ff0000;
+  margin: 0 0 20px 0;
 }
 
-body {
-  font-size: 20px;
+.block {
+  border: 10px solid rgb(0, 0, 116);
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 34%;
+  flex: 0 1 34%;
 }
-body h2 {
-  font-size: 10px;
+.block__element {
+  padding: 50px;
+  border: 10px solid rgb(16, 134, 47);
+}
+.block__element_1 {
+  align-self: flex-start;
+  order: 2;
+}
+.block__element_2 {
+  align-self: center;
+  order: 3;
+}
+.block__element_3 {
+  align-self: flex-end;
+  order: 1;
 }
